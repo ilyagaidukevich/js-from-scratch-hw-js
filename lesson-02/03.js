@@ -3,7 +3,18 @@
  * Балл может быть целым числом от 0 до 100, а оценки 'F' (0 - 49), 'D' (50 - 69), 'C' (70-79), 'B' (80 - 89), 'A' (90 - 100)
  * Результат сохраните в переменной grade.
  */
-
-const score = 70 // тестовое значение, можно изменять
+let score = Math.floor(Math.random()*102) // тестовое значение, можно изменять
+console.log(score)
 let grade
-// your code
+if (score <= 49) {
+    grade = 'F'
+} else if (score > 49 && score <= 69) {
+    grade = 'D'
+} else if (score > 69 && score <= 79) {
+    grade = 'C'
+} else if (score > 79 && score <= 89) {
+    grade = 'B'
+} else if (score > 89 && score <= 100) {
+    grade = 'A'
+}
+console.log(grade)
