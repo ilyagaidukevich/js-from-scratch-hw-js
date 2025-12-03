@@ -9,7 +9,6 @@ function isEven(num) {
     } else {
         return false
     }
-
 }
 
 isEven(num);
