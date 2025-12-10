@@ -13,8 +13,8 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-let array = ['cucumber', 100, 'potato', false, 3, 69, 'red', 5];
-let element = 3;
+let array = [1, 2, 3];
+let element = 2;
 for (i = 0; i < array.length; i++) {
     function includesElement(array, element) {
         if (array[i] === element) {
@@ -23,5 +23,5 @@ for (i = 0; i < array.length; i++) {
             return (false)
         }
     }
-    includesElement(array, element)
+    console.log(includesElement(array, element))
 }
