@@ -12,16 +12,15 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-let string = 'hi';
-console.log(string)
+let string = 'bum';
+console.log(string.length)
 
 function doubleEachCharacter(string) {
-    stringArray = string.split('');
-    let newArray = [];
-    for (let i = 0; i < stringArray.length; i++) {
-        newArray.push(stringArray[i] + stringArray[i])
+    let doubleString = [];
+    for (let i = 0; i < string.length; i++) {
+        doubleString.push(string[i] + string[i])
     }
-    return newArray.join('');
+    return doubleString.join('')
 }
 
-doubleEachCharacter(string)
+console.log(doubleEachCharacter(string))
