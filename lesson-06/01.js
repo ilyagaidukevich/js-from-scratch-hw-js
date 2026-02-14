@@ -23,28 +23,10 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
-let favouriteBooks = [
-  {
-    id: 1,
-    title: 'Head First JavaScript Project',
-    author: 'Eric Freeman',
-    price: 29.99,
-    genre: 'Programming'
-  },
-  {
-    id: 2,
-    title: 'Head First JavaScript Project',
-    author: 'Kylie Simpson',
-    price: 39.99,
-    genre: 'Programming'
-  },
-  {
-    id: 3,
-    title: 'JavaScript: The Defenitive Guide',
-    author: 'David Flanagan',
-    price: 49.99,
-    genre: 'Programming'
-  },
-]
+let numbers = [1, 2, 3, 4, 5];
 
-let filter = favouriteBooks.filter((element, index) => element.price > 30)
+let filter = numbers.filter((element, index) => {
+   return element % 2 !== 0
+})
+
+console.log(filter);
